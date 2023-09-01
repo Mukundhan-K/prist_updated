@@ -1,0 +1,1713 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: var(--font1);
+}
+body{
+
+}
+
+#head a{
+    color: #fff;
+
+}
+:root{
+    --nav_bgc:#0C0D15;
+    --piink:#ED0F70;
+    --piink2:#cf2e2e;
+    --nav_blue:#0072bc;
+
+    --font1: "Roboto", sans-serif;
+}
+
+
+/* ------------------------------------------------------------------------- */
+
+/* 
+
+header
+
+*/
+
+#head{
+    width: 100vw;
+    height: auto;
+    font-family: "Roboto", sans-serif;
+}
+
+.ii{
+    margin-right: 5px;
+}
+/* ------------------------------------------------------------------------- */
+/* 
+
+top
+
+*/
+.top{
+    background-color: var(--nav_bgc);
+    height: auto;
+    padding: 15px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* 
+lf
+ */
+.lf{
+    font-size: 0.85rem;
+}
+.lf a{
+    margin-right: 10px;
+}
+
+/* 
+
+rt
+*/
+.rt{
+    text-transform: capitalize;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 0.9rem;
+}
+.rt a{
+    padding: 5px;
+}
+.blink-blue{
+    background-color: var(--nav_blue);
+    animation: blink 1.2s linear  infinite ;
+}
+.blink-pink{
+    background-color: var(--piink);
+    animation: blink 1.2s linear  infinite ;
+
+}
+
+@keyframes blink{
+    0%{ opacity: 1;}
+    70%{ opacity: 0;}
+
+}
+
+/* ------------------------------------------------------------------------- */
+
+/* 
+
+bottom
+
+*/
+.bottom{
+    height: 105px;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: 800;
+    color: #252568;;
+    background-color: #FFFAFA;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+/* 
+
+logo
+*/
+.logo img{
+    margin-top: 3px;
+    width: 23rem;
+}
+/* 
+
+nav
+
+*/
+nav .navcont{
+    display: flex;
+    /* column-gap: 50px; */
+}
+nav >  ul > li{
+    padding: 45px 25px;
+}
+
+/* ------------------------------------------------------------------------- */
+/* 
+common ul
+
+ */
+
+ nav ul li ul{
+    width: 200%;
+    background-color: #f2f2f2;;
+    color: #0C0D15;
+    font-weight: 700;
+
+    z-index: 2;
+}
+
+/* 
+
+common li*/
+
+nav ul li ul li{
+    border-bottom: 2px  #dde2e6 solid;
+    padding: 20px 0px 20px 20px;
+}
+
+/* 
+common nested */
+nav ul li ul li ul{
+    width: 100%;
+}
+nav ul li ul li ul li{
+    padding: 20px 20px 20px 10px;
+    line-height: 25px;
+}
+
+#arrow{
+    margin-left: 150px;
+}
+/* ------------------------------------------------------------------------- */
+/* 
+
+nav positon
+
+*/
+nav ul li{
+    position: relative;
+}
+nav ul li ul{
+    position: absolute;
+}
+/* ------------------------------------------------------------------------- */
+
+/* 
+2nd ul position*/
+
+nav > ul > li > ul{
+    left: 0;
+    top: 97%;
+
+    display: none;    
+}
+
+/* 
+3rd ul position */
+
+nav > ul > li > ul > li > ul{
+    left: 98%;
+    top: 0%;
+
+    display: none;    
+
+}
+
+/* ------------------------------------------------------------------------- */
+
+
+/* hover  */
+
+nav ul li:hover > ul{
+    display: block;
+}
+
+.navcont > li:hover{
+    color: var(--piink);
+}
+nav ul li ul li:hover{
+    background-color: #dbdbdb;
+} 
+/* ------------------------------------------------------------------------- */
+/* 
+
+
+menubar
+
+*/
+
+#menubar{
+    font-size: 1rem;
+
+    display: none;
+}
+
+#menu_chkk{
+
+    display: none;
+
+}
+
+/* ------------------------------------------------------------------------- */
+
+/* 
+search and bar
+ */
+
+ .search{
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.search:hover{
+    color: var(--piink);
+}
+/* ------------------------------------------------------------------------- */
+.searchout{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.searchbar{
+    color: black;
+    padding: 10px;
+    background-color: #fff;
+
+    position: absolute;
+    top: 200px;
+
+    display: none;
+}
+.serbar > input{
+    width: 450px;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+
+.serbar > label{
+    color: black;
+    margin: 0 15px;
+    font-size: 1.5rem;
+}
+.serbar > i{
+    margin: 0 15px;
+
+}
+
+
+/* 
+
+search input and disply*/
+
+#ser-chk{
+    display: none;
+}
+
+#ser-chk:checked ~ .searchbar{
+    display: block;
+}
+
+/* ------------------------------------------------------------------------- */
+
+
+
+section{
+    height: 100%;
+    width: 100vw;
+}
+
+
+/* ------------------------------------------------------------------------- */
+
+/* page 1 */
+/* ------------------------------------------------------------------------- */
+
+#page1{
+    height: 65vh;
+    width: 100vw;
+}
+
+.p1cont{
+    height: 100%;
+    width: 100vw;
+    background-image: url(./body_img/Screenshot\ 2023-08-06\ at\ 09-35-27\ Ponnaiyah\ Ramajayam\ Institute\ of\ Science\ and\ Technology\(PRIST\).png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    animation: p1 8s infinite  ;  
+}
+
+@keyframes p1{
+    0%{
+        
+        background-image: url(./body_img/Screenshot\ 2023-08-06\ at\ 09-35-27\ Ponnaiyah\ Ramajayam\ Institute\ of\ Science\ and\ Technology\(PRIST\).png);
+    }
+    25%{
+        padding: 20px 0px;
+        background-image: url(./body_img/p1_2.jpeg);
+    }
+    50%{
+        background-image: url(./body_img/p1_3.jpeg);
+    }
+    75%{
+    background-image: url(./body_img/p1_1.jpeg);
+    }
+
+}
+
+/* ------------------------------------------------------------------------- */
+
+/* page 2 */
+/* ------------------------------------------------------------------------- */
+
+#page2{
+    height: auto;
+    color: #fff;
+    background-color: #252568;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.p2cont{
+    width: 85vw;
+    padding: 2rem;
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+
+#p2lf{
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+#p2lf h1{
+    font-weight: 400;
+    line-height: 2.5rem;
+}
+#p2lf p{
+    color: #efe9e9;
+    line-height: 1.8rem;
+    text-align: justify;
+}
+
+
+
+#p2rt{
+    width: 45%;
+}
+#p2rt img{
+    height: 90%;
+    width: 95%;
+    object-fit: cover;
+}
+
+/* ------------------------------------------------------------------------- */
+
+/* page 3 */
+/* ------------------------------------------------------------------------- */
+
+#page3{
+    height: 100%;
+    width: 100vw;
+}
+
+.p3cont{
+    height: 100%;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.p3cont h1{
+    margin-top: 2rem;
+    color: #0072bc;
+    text-align: center;
+}
+
+.p3bott{
+    /* temp */
+
+    height: 50vh;
+    width: 100%;
+    display: flex;
+
+}
+/* ------------------------------------------------------------------------- */
+/* left */
+
+.p3lf{
+    width: 700px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.p3lf_car_frame{
+    width: 80%;
+    overflow: hidden;
+}
+.p3_lr_car_pic_cont{
+
+    width: 800%;
+    /* width: 100%; */
+    height: 100%;
+
+    display: flex;
+}
+
+.p3_lf_pic{
+    width: 600px;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+.p3_l{
+    height: 100%;
+    width: 50%;
+
+    color: #0072bc;
+    text-align: center;
+    padding: 0px 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+ 
+    position: relative;
+
+
+}
+.p3_car_img{
+    height: 50%;
+    width: 12rem;
+
+    display: flex;
+    justify-content: center;
+
+
+    overflow: hidden;
+
+}
+.p3_car_img img{
+    width: 12rem;
+    object-fit: cover;
+    transition: all 0.5s linear;
+}
+
+.pink_overlay{
+    background-color: #ED0F70;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 4px;
+    border-radius: 5px;
+
+    position: absolute;
+    top: 6rem;
+    left: 0.5rem;
+}
+
+.p3_l > span{
+    width: 200px;
+}
+
+.p3_l > span:hover{
+    cursor: pointer;
+}
+/* ------------------------------------------------------------------------- */
+/* hover */
+
+.p3_car_img:hover .p3_car_img img {
+    transform: translateY(21rem);
+}
+
+/* ------------------------------------------------------------------------- */
+/* carousal */
+.p3_lr_car_pic_cont{
+    /* margin-left: -200PX; */
+    animation: trans_vishwa 30s infinite linear;
+}
+
+.p3_lr_car_pic_cont:hover{
+    animation-play-state: paused;
+
+}
+
+@keyframes trans_vishwa {
+    0%{
+        margin-left: 0;
+    }
+
+    99.5%{
+        margin-left: -700.5%;
+
+    }
+    99.51%{
+        margin-left: 0%;
+
+    }
+
+}
+
+/* ------------------------------------------------------------------------- */
+/*  PAGE 3 _-  RIGHT RT */
+
+.p3rt{
+
+    width: 50%;
+    padding: 1rem 0;
+}
+
+.pr_rt_car_frame{
+    width: auto;
+    height: 100%;
+    border: 1px solid #F0F4FF;
+    overflow: hidden;
+}
+
+#p3_rt_car_cont span{
+
+    width: 100%;
+    text-transform: capitalize;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#p3_rt_car_cont > li > span >a{
+    color: #0072bc;
+}
+
+#p3_rt_car_cont article{
+    color: #6b6b6b;
+    font-size: 0.9rem;
+}
+
+#p3_rt_car_cont img{
+    width: 3rem;
+    height: 2.4rem;
+
+    margin: 0.5rem 0 0.5rem 1.5rem ;
+
+}
+
+/* ------------------------------------------------------------------------- */
+
+/*  animation */
+
+#p3_rt_car_cont{
+    animation: trans_visswa 15s 2s infinite forwards;
+    animation-timing-function: linear;
+}
+
+#p3_rt_car_cont:hover{
+    animation-play-state: paused;
+}
+
+@keyframes trans_visswa {
+    0%{
+        margin-top: 0;
+    }
+
+    20%{
+        margin-top: 0%;
+    }
+
+
+    23%{
+        margin-top: -25%;
+    }
+
+    40%{
+        margin-top: -25%;
+    }
+
+    43%{
+        margin-top: -48%;
+    }
+
+    60%{
+        margin-top: -48%;
+    }
+
+    63%{
+        margin-top: -70%;
+    }
+
+    80%{
+        margin-top: -70%;
+    }
+
+    83%{
+        margin-top: -93%;
+    }
+
+    98%{
+        margin-top: -93%;
+    }
+
+
+}
+
+
+
+/* ------------------------------------------------------------------------- */
+
+/* page 4 */
+/* ------------------------------------------------------------------------- */
+
+
+#page4{
+    height: auto;
+}
+
+#p4cont{
+    height: 100%;
+    padding: 2rem;
+    background-color: #F0F4FF;
+
+    display: grid;
+    place-content: center;
+    gap: 2rem;
+}
+
+#p4cont h1{
+    color: #0072bc;
+    text-align: center;
+}
+
+.p4pic{
+    height: 100%;   
+    width: 90vw;
+    text-transform: capitalize;
+    padding: 1rem 2.8rem ;
+
+    display: flex;
+    gap: 70px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.p4pic > div{
+    width: 18rem;
+    display: flex;
+    justify-content: center;
+}
+
+.p4pic span {
+    width: 15.8rem;
+    height: 10rem;
+
+    display: flex;
+    justify-content: center;
+    align-items:  flex-end;
+
+    position: relative;
+    z-index: 3;
+}
+
+.p4pic span > a{
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 1.5rem;
+    width: 115%;
+
+    position: absolute;
+}
+
+.p4pic span:hover a{
+    background-color: #0072bc;
+}
+
+.p4pic span:hover .p4pic > div{
+    background-color: grey;
+}
+
+/* 
+
+page 4 span pictures
+
+*/
+
+.clg1{
+     background-image: url(./body_img/eng.jpeg);
+    background-size: contain;
+    }
+.clg2{
+    background-image: url(./body_img/arts.jpeg);
+    background-size: contain;
+}
+.clg3{
+    background-image: url(./body_img/edu.jpeg);
+    background-size: contain;
+}
+.clg4{
+    background-image: url(./body_img/comm.jpeg);
+    background-size: contain;
+    
+}
+.clg5{
+    background-image: url(./body_img/agri.jpeg);
+    background-size: contain;
+}
+
+
+/* 
+
+page 4 oaver lay*/
+
+.p4overlay{
+    width: 100%;
+    height: 100%;
+    background-color: #252568a2;
+  
+    position: absolute;
+    z-index: -2;
+}
+
+/* ------------------------------------------------------------------------- */
+
+/* page 5 */
+/* ------------------------------------------------------------------------- */
+
+#page5{
+    height: 100%;  
+
+    /*  temp */
+}
+
+#p5cont{
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+
+    display: grid;
+    place-content: center;
+    gap: 40px;
+}
+
+#p5cont h1{
+    color: #0072bc;
+    text-align: center;
+    
+}
+
+.p5pic{
+    height: 100%;   
+    width: 85vw;
+    text-transform: capitalize;
+    /* padding: 1rem 4rem ; */
+
+    display: flex;
+    justify-content: center;
+    gap: 40px 80px;
+    flex-wrap: wrap;
+}
+
+.p5pic > div {
+    width: 15rem;
+    height: 17.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:  start;
+    gap: 12px;
+
+    /* position: relative; */
+}
+
+.p5pic > div > div{
+    width: 100%;
+    height: 14rem;
+
+    display: flex;
+    align-items: flex-end;
+
+
+    overflow: hidden;
+
+}
+
+.p5pic > div > span{
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.p5pic > div > span > article{
+    font-size: 0.8rem;
+    font-weight: normal;
+    color: #707070;
+
+    margin-top: 5px;
+}
+
+
+/* 
+
+p5 pictures
+
+*/
+
+#p5_p1{
+    background-image: url(./body_img/p5_1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#p5_p2{
+    background-image: url(./body_img/p5_2.jpg);
+    background-position: center;
+    background-size: contain;
+
+}
+#p5_p3{
+    background-image: url(./body_img/p5_3.jpeg);
+    background-position: center;
+    background-size: cover;
+
+}
+#p5_p4{
+    background-image: url(./body_img/p5_4.jpeg);
+        background-position: center;
+        background-size: cover;
+
+}
+#p5_p5{
+    background-image: url(./body_img/p5_5.jpeg);
+    background-size: cover;
+    background-position: center;
+
+}
+#p5_p6{
+    background-image: url(./body_img/p5_6.jpeg);
+        background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+#p5_p7{
+    background-image: url(./body_img/p5_7.jpeg);
+        background-position: center;
+        background-size: cover;
+
+}
+#p5_p8{
+    background-image: url(./body_img/p5_8.jpeg);
+        background-position: center;
+        background-size: cover;
+
+}
+
+/* 
+
+page 5 link and seacrh
+
+*/
+.p5pic > div > div > div {
+    width: 100%;
+    padding: 30px;
+    background-color: #f1f2f4;
+
+    display: flex;
+    justify-content: space-around;
+
+    transform: translateY(4.8rem);
+}
+
+.p5pic > div > div > div >a{
+    color: #707070;
+    /* color: #0C0D15; */
+}
+
+/* 
+
+page 5 hover
+
+*/
+
+.p5pic > div > div:hover .liser
+{
+
+transition: 0.2s linear;
+transform: translateY(0);
+}
+
+.p5pic > div > div:hover{
+    position: relative;
+
+}
+
+.p5pic > div > div:hover .p5_overlay{
+    width: 100%;
+    height: 100vh;
+    background-color: #0c0d1595;
+
+    position: absolute;
+}
+
+.liser > a:hover{
+    color: rgb(33, 144, 188);
+}
+
+
+
+/* ------------------------------------------------------------------------- */
+
+/* page 6 */
+/* ------------------------------------------------------------------------- */
+
+#page6{
+
+    /* temp */
+
+    height: 100%;
+    background-image: url(./body_img/p1_2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+
+    display: flex;
+    align-items: flex-start;
+}
+
+#p6bg_overlay{
+    width: 100%;
+    height: 100%;
+    background-color: #252568a2;
+    padding: 1rem;
+
+    color: white;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+#p6cont{
+    width: 85%;
+    height: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 4rem; */
+}
+
+/* ------------------------------------------------------------------------- */
+
+.p6lf{
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.p6lf > h1{
+    padding: 2rem;
+}
+
+.p6book{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+}
+
+#bo1 , #bo2 , #bo3{
+    width: 19.8rem;
+    padding: 1rem 2rem;
+
+    display: flex;
+    gap: 1rem;
+}
+
+.p6book > div:hover{
+    background-color: #0072bc;
+}
+
+.bool_i > i{
+    font-size: 3rem;
+}
+
+.p6_span{
+    line-height: 1.5rem;
+}
+
+
+
+/* ------------------------------------------------------------------------- */
+.p6rt{
+    width: 50%;
+    background-image: url(./body_img/award-team.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+/* ------------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------------- */
+
+/* page 7 */
+/* ------------------------------------------------------------------------- */
+
+#page7{
+    height: 100%;
+    background-color: #F0F4FF;
+}
+
+.p7cont{
+    height: 100%;
+    width: 100vw;
+    padding: 3rem;
+
+    display: grid;
+    place-content: center;
+    gap: 1.5rem;
+}
+
+.p7cont > h1{
+    color: #0072bc;
+    text-align: center;
+    line-height: 2rem;
+}
+/* ------------------------------------------------------------------------- */
+
+/* 
+
+carousal
+
+*/
+
+.p7cont #p7car_out{
+    height: 100%;
+    width: 90vw; 
+
+    overflow: hidden;
+}
+
+
+#p7car_out #p7car_frame{
+    height: 100%;
+    width: 200%; 
+
+    display: flex;
+
+
+}
+
+#p7car_in_f1{
+    animation: p7_carousal 4s linear 2s infinite  ;
+
+}
+
+
+.p7car_in{
+    height: 100%;
+    width: 90vw;
+    padding: 3rem;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1.5rem;
+
+}
+
+
+
+.p7car_in > span{
+    height: 2.5rem;
+    width: 5rem;
+}
+
+/* ------------------------------------------------------------------------- */
+
+/*  p7 cont carousal images   */
+
+.p7car_f1_img1{
+    background-image: url(./p7_car_img/IIRS-ISRO.jpeg);
+    background-size: cover;
+}
+.p7car_f1_img2{
+    background-image: url(./p7_car_img/BSNL.jpg);
+    background-size: cover;
+
+}
+.p7car_f1_img3{
+    background-image: url(./p7_car_img/TVS.jpg);
+    background-size: cover;
+
+}
+
+
+.p7car_f2_img1{
+    background-image: url(./p7_car_img/Agarwal.png);
+    background-size: cover;
+
+}
+.p7car_f2_img2{
+    background-image: url(./p7_car_img/ICICI.jpg);
+    background-size: cover;
+
+}
+.p7car_f2_img3{
+    background-image: url(./p7_car_img/Facetrg.jpg);
+    background-size: cover;
+
+}
+
+/* ------------------------------------------------------------------------- */
+/*  p7 carousal animation */
+
+/* ------------------------------------------------------------------------- */
+
+@keyframes p7_carousal {
+    0%{
+        margin-left: 0;
+    }
+
+    45%{
+        margin-left: 0;
+    }
+
+    55%{
+        margin-left: -50%;
+    }
+
+
+    100%{
+        margin-left: -50%;
+
+    }
+
+}
+
+/* ------------------------------------------------------------------------- */
+/*  page 8  */
+
+/* ------------------------------------------------------------------------- */
+
+footer{
+    background-color: #252568;
+    color: #fff;
+    width: 100vw;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+#foot{
+    height: 100%;
+    width: 85vw;
+    padding: 2rem 1rem;
+    background-color: #252568;
+}
+
+.footcont{
+    height: auto;
+    width: 100% ;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+
+    display: flex;
+    justify-content: space-around;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+}
+/* ------------------------------------------------------------------------- */
+.ftlf{
+    width: 25rem;
+}
+
+.ftrt{
+    width: 25rem;
+}
+
+
+.footcont :is(h1,h2,h3,h4,h5){
+    color: #0072bc;
+    padding: 0 0 1rem 0;
+    font-size: 1.5rem;
+
+}
+
+
+#ftcontact{
+    width: 25rem;
+}
+
+#ftcontact > h2{
+    font-size: 1.3rem;
+
+}
+
+#ftcontact > span{
+    font-size: 0.9rem;
+    font-weight: 501;
+}
+
+#ftcontact > article{
+    padding: 2rem 0 0 0;
+}
+
+#ftcontact > article a{
+    color: white;
+}
+
+/* ------------------------------------------------------------------------- */
+
+:is(.ftlf,.ftrt) ul li{
+
+    background-color: #1f1f5c;
+    padding: 0.8rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.89rem;
+}
+
+:is(.ftlf,.ftrt) ul li:hover{
+    background-color: #ED0F70;
+}
+/* ------------------------------------------------------------------------- */
+
+#footbott{
+    width: 100%;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #0072bc;
+    padding: 1rem 0;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    gap: 3rem;
+}
+
+.ft_social{
+    display: flex;
+    gap: 2rem;
+}
+
+.ft_social i{
+    color: white;
+}
+
+#arr__top {
+    padding: 1rem;
+    background-color: #1f1f5c;
+    box-shadow: 2px 2px 5px black;
+
+}
+
+#arr__top_i{
+    margin-right: 0;
+}
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------- */
+/*  MEDIA QUERY  1 */
+
+/* ------------------------------------------------------------------------- */
+
+
+
+
+@media (max-width: 1250px){
+
+/* ------------------------------------------------------------------------- */
+ /*  header */
+
+    .bottom{
+        height: 11rem;
+
+        position: relative;
+
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+    nav >  ul > li{
+        padding: 25px 25px;
+
+    }
+/* ------------------------------------------------------------------------- */
+/* menu and search bar */
+
+
+.search{
+    position: absolute;
+    top: 45%;
+    right: 2%;
+
+}
+
+.searchbar{
+    top: 300px;
+}
+/* ------------------------------------------------------------------------- */
+ /*  page 1 */
+
+#page1{
+    height: 60vh;
+
+}
+/* ------------------------------------------------------------------------- */
+ /*  page 2 */
+
+.p2cont{
+    gap: 2rem;
+}
+#p2lf , #p2rt{
+    width: 100%;
+    
+}
+/* ------------------------------------------------------------------------- */
+ /*  page 3 */
+
+ 
+.p3lf{
+    width: 55%;
+}
+.p3lf_car_frame{
+    width: 100%;
+}
+.p3rt{
+    width: 45%;
+}
+
+
+/* ------------------------------------------------------------------------- */
+ /*  foter */
+
+#footbott{
+    justify-content: center;
+}
+
+
+}
+
+/* ------------------------------------------------------------------------- */
+/*  MEDIA QUERY 2 */
+
+/* ------------------------------------------------------------------------- */
+
+@media (max-width: 1000px){
+
+    .rt{
+        display: none;
+    }
+
+.bottom{
+    height: 105px;
+}
+
+nav{
+    display: none;
+}
+.search{
+    position: absolute;
+    top:32%;
+    right: 2%;
+}
+.ser-chk{
+    display: none;
+
+}
+.serbar{
+}
+
+#menubar{
+
+    display: inline;
+
+    position: absolute;
+    top: 42%;
+    right: 8%;
+}
+
+#menu_chkk:checked ~ nav {
+    display: block;
+}
+
+
+/* ------------------------------------------------------------------------- */
+
+/* nav bar */
+
+nav{
+    position: relative;
+    top: -3%;
+    left: 65%;
+    /* right: 0px; */
+
+}
+
+nav .navcont{
+    background-color: #12132D;
+    color: #cf2e2e;
+    width: 15rem;
+ 
+    flex-direction: column;
+}
+
+nav >  ul > li{
+    padding: 25px 0 25px 75px;
+    /* width: 200%; */
+
+}
+
+/* ------------------------------------------------------------------------- */
+nav ul li ul{
+    width: 15rem;
+
+    position: relative;
+    top: 10px;
+    left: -75px;
+}
+nav > ul > li > ul > li > ul{
+
+    width: 15rem;
+
+    position: relative;
+    top: 10px;
+    left: -20px;
+
+
+}
+/* ------------------------------------------------------------------------- */
+ /*  page 1 */
+
+ #page1{
+    height: 45vh;
+
+}
+
+
+/* ------------------------------------------------------------------------- */
+ /*  page 3 */
+
+ .p3bott{
+    height: 85vh;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+ 
+ .p3lf{
+    width: 69%;
+}
+.p3lf_car_frame{
+    width: 100%;
+}
+.p3rt{
+    height: 50vh;
+    width: 70%;
+    /* margin-left: 20%; */
+}
+}
+
+/* ------------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------------- */
+/*  MEDIA QUERY 3 */
+
+/* ------------------------------------------------------------------------- */
+
+
+@media (max-width: 750.1px){
+
+    .rt{
+        display: flex;
+    }
+    .bottom{
+        height: 80px;
+    }
+
+    .logo img{
+        margin-top: 3px;
+        /* height: 10; */
+        width: 15rem;
+    
+    }
+    #menubar{
+        top: 35%;
+        right: 4%;
+
+    }
+    .search{
+        display: none;
+    }
+    
+
+    nav{
+        left: 63%;
+    
+    }
+    
+/* ------------------------------------------------------------------------- */
+ /*  page 2 */
+
+
+    .p2cont{
+        width: 90vw;
+        padding: 1rem 0;
+    }
+
+    #p2lf h1{
+        text-align: center;
+    }
+/* ------------------------------------------------------------------------- */
+ /*  page 3 */
+
+ 
+ .p3lf{
+    width: 100%;
+}
+.p3rt{
+    height: 50vh;
+    width: 100%;
+}
+
+    /* ------------------------------------------------------------------------- */
+     /*  page  6 */
+    
+     .p6lf {
+        height: 100%;
+        width: 100%;
+
+        text-align: center;
+    }
+    
+
+    .p6book{
+        justify-content: center;
+    }
+
+    .p6rt{
+        height: 50vh;
+        width: 50vw;
+    }
+
+    #p6cont{
+        justify-content: center;
+    }
+/* ------------------------------------------------------------------------- */
+/*  page 7 */
+
+    .p7cont #p7car_out{
+        width: 100vw;
+}
+
+.p7car_in{
+    width: 100vw;
+    /* gap: 1.5rem; */
+
+}
+}
+
+/* ------------------------------------------------------------------------- */
+/*  MEDIA QUERY 3 */
+
+/* ------------------------------------------------------------------------- */
+
+@media (max-width: 750px){
+
+    .top{
+        padding: 0 6rem;
+    }
+
+    .lf{
+        display: none;
+    }
+
+    .rt{
+        gap: 0.1rem;
+        justify-content: center;
+    }
+
+    .bottom{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav{
+        top: 4%;
+        left: 0%;
+    
+    }
+
+    nav .navcont{
+        width: 100vw;
+    }
+    nav ul li ul{
+        width: 100vw;
+    }  
+    
+    nav ul li ul li ul{
+        width: 100vw;
+    }    
+
+    
+    #menubar{
+        left: 8%;
+    }
+    
+
+    /* ------------------------------------------------------------------------- */
+ /*  page 1 */
+
+#page1{
+    height: 25vh;
+
+}
+
+
+    .p3lf_car_frame{
+        width: 65%;
+    }
+
+    .p3lf{
+        width: 100%;
+        
+    }
+    .p3rt{
+    
+        /* height: 50vh; */
+        width: 85%;
+    }
+
+    /* ------------------------------------------------------------------------- */
+     
+}
